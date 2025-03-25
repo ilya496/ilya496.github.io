@@ -71,6 +71,7 @@ body {
 
 @media (max-width: 1170px) {
   .nav {
+    position: relative;
     width: 100%;
     max-width: 900px;
   }
@@ -184,6 +185,11 @@ body {
   }
 
   .image-left .text, .image-right .text {
+    width: 100%;
+  }
+
+  .section__link {
+    display: block;
     width: 100%;
   }
 }
