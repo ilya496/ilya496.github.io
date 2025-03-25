@@ -55,6 +55,18 @@
             Použijeme konvoluční neuronovou síť (CNN) pro extrakci rysů z
             obrázků a následnou klasifikaci.
           </p>
+          <p class="section__text">
+            Architektura sítě bude obsahovat několik konvolučních vrstev pro
+            zachycení nízkoúrovňových i vysoce abstraktních rysů, následované
+            plně propojenou vrstvou pro klasifikaci výsledků. Použitím aktivace
+            ReLU a optimalizačního algoritmu, jako je Adam, dosáhneme
+            efektivního učení.
+          </p>
+          <p class="section__text">
+            Tento přístup umožní vysokou přesnost klasifikace. Výsledný model
+            bude dále optimalizován pomocí technik, jako je augmentace dat a
+            regularizace, aby se minimalizovalo přeučení.
+          </p>
         </div>
       </div>
     </section>
@@ -64,8 +76,14 @@
         <div class="text">
           <h2 class="section__title">Trénovací a testovací data</h2>
           <p class="section__text">
-            Dataset: Adience nebo IMDb-Face, obsahující anotované obrázky s
-            věkem a pohlavím.
+            Chtěl bych použít Adience dataset, obsahující anotované obrázky s
+            věkem a pohlavím. Dataset obsahuje různé věkové skupiny a pohlaví,
+            což umožňuje trénování modelu na různorodých datech.
+          </p>
+          <p class="section__text">
+            Dataset obsahuje více než 19 000 obrázků s anotacemi (~2.8GB). Pro
+            účely tohoto projektu budeme pracovat s menší podmnožinou dat. Data
+            budou rozdělena na trénovací a testovací množinu v poměru 80:20.
           </p>
         </div>
         <img
@@ -97,8 +115,8 @@
     <section class="section" id="vysledky">
       <h2 class="section__title">Zhodnocení výsledků</h2>
       <p class="section__text">
-        Vyhodnotíme úspěšnost modelu na testovacích datech a prodiskutujeme
-        limity.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id a
+        doloribus, numquam voluptates illo!
       </p>
       <div class="counter" data-target="95">0</div>
     </section>
@@ -107,7 +125,9 @@
       <p>&copy; 2024 Odhad věku a pohlaví</p>
     </footer>
 
-    <button id="scrollTop">&#8679;</button>
+    <button id="scrollTop">
+      <img src="/icons/arrow-top.svg" alt="Arrow Icon" />
+    </button>
 
     <div id="imageModal" class="modal">
       <img id="modalImg" class="modal-content" />

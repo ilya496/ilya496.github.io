@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 275) {
-      scrollTopBtn.style.display = "block";
+      scrollTopBtn.style.display = "flex";
     } else {
       scrollTopBtn.style.display = "none";
     }

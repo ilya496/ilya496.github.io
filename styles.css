@@ -13,7 +13,7 @@ body {
 
 .header {
   text-align: center;
-  padding: 4rem;
+  padding: 6.5rem;
   background-image: url("/images/header.jpg");
   background-size: cover;
   background-position: center;
@@ -24,6 +24,7 @@ body {
   margin: 0;
   font-size: 2.5em;
   color: #fff;
+  text-shadow: 0px 0px 16px #333;
 }
 
 .nav {
@@ -31,7 +32,7 @@ body {
   top: 0;
   width: 80%;
   background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -106,6 +107,10 @@ body {
 
 .section img {
   cursor: pointer;
+}
+
+.section__text {
+  line-height: 1.5;
 }
 
 .text-only {
@@ -200,26 +205,25 @@ body {
 }
 
 #scrollTop {
+  display: none;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #007bff;
+  background-color: white;
+  border: 1px solid #000;
   color: white;
-  border: none;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
-  display: none;
   transition: all 0.3s ease;
-}
-
-#scrollTop:hover {
-  background: #0056b3;
+  width: 3rem;
+  height: 3rem;
 }
 
 .counter {
   font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #ff3d8e;
 }
