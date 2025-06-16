@@ -114,6 +114,15 @@ body {
   line-height: 1.5;
 }
 
+.section__list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.section__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .section__link {
   display: inline-block;
   margin: 10px 0;

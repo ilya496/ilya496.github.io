@@ -37,8 +37,11 @@
     <section class="section text-only" id="zadani">
       <h2 class="section__title">Zadání</h2>
       <p class="section__text">
-        Cílem projektu je vytvořit model pro odhad věku a pohlaví z fotografie
-        pomocí neuronových sítí.
+        Cílem tohoto projektu bylo vytvořit model pro odhad věku a pohlaví z
+        fotografie obličeje pomocí neuronové sítě. Projekt využívá dataset
+        Adience, který obsahuje reálné snímky osob různého věku, pohlaví a v
+        různých podmínkách. Hlavním cílem bylo navrhnout, natrénovat a
+        vyhodnotit model, který dokáže tyto údaje spolehlivě predikovat.
       </p>
     </section>
 
@@ -52,14 +55,15 @@
         <div class="text">
           <h2 class="section__title">Návrh řešení</h2>
           <p class="section__text">
-            Použijeme konvoluční neuronovou síť (CNN) pro extrakci rysů z
-            obrázků a následnou klasifikaci.
+            Tohle je typická úloha, která se dá řešit konvoluční neuronovou síti
+            (CNN), která extrahuje základní rysy z obrázků. Pro následnou
+            klasifikaci dat je použita plně propojená síť.
           </p>
           <p class="section__text">
-            Architektura sítě bude obsahovat několik konvolučních vrstev pro
-            zachycení nízkoúrovňových i vysoce abstraktních rysů, následované
-            plně propojenou vrstvou pro klasifikaci výsledků. Použitím aktivace
-            ReLU a optimalizačního algoritmu, jako je Adam, dosáhneme
+            Architektura sítě obsahuje několik konvolučních vrstev pro zachycení
+            nízkoúrovňových i vysoce abstraktních rysů, následované plně
+            propojenou vrstvou pro klasifikaci výsledků. Použitím aktivační
+            funkce ReLU a optimalizačního algoritmu, jako je Adam, dosáhneme
             efektivního učení.
           </p>
           <p class="section__text">
@@ -76,15 +80,37 @@
         <div class="text">
           <h2 class="section__title">Trénovací a testovací data</h2>
           <p class="section__text">
-            Chtěl bych použít Adience dataset, obsahující anotované obrázky s
-            věkem a pohlavím. Dataset obsahuje různé věkové skupiny a pohlaví,
-            což umožňuje trénování modelu na různorodých datech.
+            Byl použit Adience dataset, obsahující anotované obrázky s věkem a
+            pohlavím. Dataset obsahuje různé věkové skupiny(8) a pohlaví(2), což
+            umožňuje trénování modelu na různorodých datech.
           </p>
           <p class="section__text">
             Dataset obsahuje více než 19 000 obrázků s anotacemi (~2.8GB). Pro
             účely tohoto projektu budeme pracovat s menší podmnožinou dat. Data
             budou rozdělena na trénovací a testovací množinu v poměru 80:20.
           </p>
+          <ul class="section__list">
+            <li class="section__item">
+              <strong>x</strong> - x-ová souřadnice levého horního rohu obličeje
+            </li>
+            <li class="section__item">
+              <strong>y</strong> - y-ová souřadnice levého horního rohu obličeje
+            </li>
+            <li class="section__item"><strong>dx</strong> - šířka obličeje</li>
+            <li class="section__item"><strong>dy</strong> - výška obličeje</li>
+            <li class="section__item">
+              <strong>tilt_ang</strong> - úhel, jak je moc obličej nakloněný do
+              stran
+            </li>
+            <li class="section__item">
+              <strong>fiducial_yaw_angle</strong> - úhel, jak je moc obličej
+              otočený do stran
+            </li>
+            <li class="section__item">
+              <strong>fiducial_score</strong> - skóre spolehlivosti generované
+              algoritmem detekce orientačních bodů obličeje (nepodstatné)
+            </li>
+          </ul>
           <a
             href="https://www.kaggle.com/datasets/alfredhhw/adiencegender"
             class="section__link"
