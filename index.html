@@ -133,16 +133,30 @@
       <h2 class="section__title">Experimenty</h2>
       <div class="grid">
         <div class="grid-item">
-          <h3>Experiment 1</h3>
-          <p>Lorem, ipsum dolor.</p>
+          <h3>Základní CNN</h3>
+          <p>
+            Nejprve byl natrénován jednoduchý CNN model pouze na základě obrázků
+            z datasetu Adience. Model dosáhl přibližně
+            <strong>58&nbsp;% přesnosti</strong> u pohlaví a
+            <strong>33&nbsp;%</strong> u věku.
+          </p>
         </div>
         <div class="grid-item">
-          <h3>Experiment 2</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h3>Využití dalších vstupů</h3>
+          <p>
+            Do modelu byla přidána i metadata jako poloha obličeje, úhel náklonu
+            nebo skóre spolehlivosti detekce. Přesnost se však výrazně
+            nezlepšila – hlavní roli stále hrála obrazová data.
+          </p>
         </div>
         <div class="grid-item">
-          <h3>Experiment 3</h3>
-          <p>Lorem ipsum dolor sit.</p>
+          <h3>MobileNetV2</h3>
+          <p>
+            Byl otestován předtrénovaný model <strong>MobileNetV2</strong>.
+            Výsledky byly prakticky stejné, možná o pár procent lepší než před
+            tím. Trénování bylo o něco rychlejší. Tento přístup se ukázal jako
+            málo efektivní.
+          </p>
         </div>
       </div>
     </section>
