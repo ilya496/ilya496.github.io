@@ -66,11 +66,14 @@
             funkce ReLU a optimalizačního algoritmu, jako je Adam, dosáhneme
             efektivního učení.
           </p>
-          <p class="section__text">
-            Tento přístup umožní vysokou přesnost klasifikace. Výsledný model
-            bude dále optimalizován pomocí technik, jako je augmentace dat a
-            regularizace, aby se minimalizovalo přeučení.
-          </p>
+          <ul class="section__list">
+            <li class="section__item">4 konvoluční bloky</li>
+            <li class="section__item">Flatten()</li>
+            <li class="section__item">Plně propojená síť</li>
+            <li class="section__item">Concatenate() - extra inputy</li>
+            <li class="section__item">2 různé output vrstvy</li>
+            <li class="section__item">Celkem 7 781 417 parametrů (~30MB)</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -144,13 +147,49 @@
       </div>
     </section>
 
-    <section class="section" id="vysledky">
-      <h2 class="section__title">Zhodnocení výsledků</h2>
+    <section class="section image-right" id="vysledky">
+      <div class="content">
+        <div class="text">
+          <h2 class="section__title">
+            Zhodnocení výsledků
+            <span class="section__title--addon">(nejpodstanější část)</span>
+          </h2>
+          <p class="section__text">
+            Po provedených experimentech a meřeních efektivity mého modelu jsem
+            dospěl k následujícím výsledkům. Přesnost určení pohlaví činí:
+          </p>
+          <div class="counter" data-target="77.3">0</div>
+          <p class="section__text">
+            Kdežto přesnost určení věku, resp. zařazení do věkových skupin
+            dosahuje:
+          </p>
+          <div class="counter" data-target="57.4">0</div>
+        </div>
+        <img src="/images/graph.png" alt="Graf mereni" class="section__image" />
+      </div>
+    </section>
+
+    <section class="section" id="reference">
+      <h2 class="section__title">Seznam referencí</h2>
       <p class="section__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id a
-        doloribus, numquam voluptates illo!
+        Adience Dataset -
+        <a
+          href="https://www.kaggle.com/datasets/alfredhhw/adiencegender/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://www.kaggle.com/datasets/alfredhhw/adiencegender/</a
+        >
       </p>
-      <div class="counter" data-target="95">0</div>
+      <p class="section__text">
+        Knihovna Tensorflow -
+        <a
+          href=" https://www.tensorflow.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://www.tensorflow.org/</a
+        >
+      </p>
     </section>
 
     <footer class="footer">
